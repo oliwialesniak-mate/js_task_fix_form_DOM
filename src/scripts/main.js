@@ -1,7 +1,7 @@
 'use strict';
 
-// Get all inputs inside the form
-const inputs = document.querySelectorAll('form input');
+// Get all inputs inside the form, excluding submit buttons
+const inputs = document.querySelectorAll('form input:not([type="submit"])');
 
 // Loop through each input to add label and placeholder
 inputs.forEach(input => {
